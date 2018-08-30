@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="large_text">
+        "你好啊,嘿嘿谁嘿\n"
+    </string>
+    <string name="action_settings">菜单1</string>
+    <string name="action_settings2">菜单2</string>
+</resources>
