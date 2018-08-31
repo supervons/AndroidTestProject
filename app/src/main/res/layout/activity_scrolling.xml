@@ -29,14 +29,6 @@
                 android:layout_width="match_parent"
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_anchorGravity="bottom|end"
-                android:layout_margin="@dimen/fab_margin"
-                android:text="2048游戏"
-                android:id="@+id/to2048Game"/>
-
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 

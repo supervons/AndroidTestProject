@@ -57,8 +57,7 @@ public class ScrollingActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(ScrollingActivity.this,UserInfoActivity.class);
-                startActivity(intent);
+                Toast.makeText(getApplicationContext(),"诶，点我干嘛？[ superfys@sina.com ]",Toast.LENGTH_SHORT).show();
             }
         });
         Button to2048Game = (Button) findViewById(R.id.to2048Game);

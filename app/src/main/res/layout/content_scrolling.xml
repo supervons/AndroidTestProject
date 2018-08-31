@@ -8,12 +8,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="example.edz.testapp.ScrollingActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:id="@+id/userInfoTextView"
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:orientation="vertical"
+        android:paddingTop="15dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/userInfoTextView"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/large_text" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchorGravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:text="2048游戏"
+            android:id="@+id/to2048Game"/>
+
+        </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
