@@ -11,6 +11,7 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class ScrollingActivity extends AppCompatActivity {
@@ -54,6 +55,14 @@ public class ScrollingActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(ScrollingActivity.this,UserInfoActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button to2048Game = (Button) findViewById(R.id.to2048Game);
+        to2048Game.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent intent =new Intent(ScrollingActivity.this,UserInfoActivity.class);

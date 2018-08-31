@@ -1,6 +1,5 @@
 package example.edz.testapp;
 
-import android.graphics.Color;
 import android.widget.Button;
 import android.widget.TextView;
 

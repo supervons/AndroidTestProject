@@ -47,13 +47,17 @@ public class UserInfoActivity extends AppCompatActivity {
         gridLayout = (GridLayout) findViewById(R.id.root);
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                Button bn = new Button(this);
-                bn.setClickable(false);
+                final Button bn = new Button(this);
+//                bn.setClickable(false);
+                bn.setOnClickListener(new Button.OnClickListener(){
+                    @Override
+                    public void onClick(View view) {
+                        bn.setText("");
+                    }
+                });
                 bn.setText("0");
                 //设置按钮的字号大小
                 bn.setTextSize(30);
-                bn.setWidth(120);
-                bn.setHeight(150);
                 //指定该组件所在行
                 GridLayout.Spec rowSpec = GridLayout.spec(i+2);
                 //指定所在列
