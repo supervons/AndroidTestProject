@@ -226,11 +226,7 @@ public class Maps {
     private void swapText(Button bt1,Button bt2){
         CharSequence text = bt1.getText();
         bt1.setText(bt2.getText());
-        if(bt1.getText().equals("2"))
-            bt1.setBackgroundColor(Color.parseColor("#3FE2C5"));
         bt2.setText(text);
-        if(bt2.getText().equals(""))
-            bt2.setBackgroundColor(Color.parseColor("#FFFFFF"));
     }
 
     public  void addButton(int i ,int j, Button btn){
